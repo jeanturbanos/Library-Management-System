@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LibraryManagementSystem.master.cs" Inherits="LibraryManagementSystem.LibraryManagementSystem" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 1499px;
+            height: 197px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="menu">
+            <header>
+               <img src="library.jpg"? class="auto-style1" />
+            </header>    
+            
+            <ul>           
+                 <li><a href="Administrator.aspx">Administrator</a></li>
+                 <li><a href="Librarian.aspx">Librarian</a></li>
+                 <li><a href="Membership.aspx">Member</a></li>                    
+             </ul> 
+
+            <nav>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </nav>
+
+            <footer>
+                Developed by :Turbanos.Roy.2019@SheridanCollege
+            </footer>
+            
+        </div>
+    </form>
+</body>
+</html>
